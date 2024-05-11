@@ -1,0 +1,76 @@
+{
+  "name": "hekto",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.2",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "@types/react-redux": "^7.1.24",
+    "firebase": "^9.13.0",
+    "formik": "^2.2.9",
+    "framer-motion": "^7.6.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-id-swiper": "^4.0.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.3",
+    "react-spinners": "^0.13.6",
+    "react-toastify": "^9.1.1",
+    "swiper": "^8.4.4",
+    "typescript": "^4.8.4",
+    "web-vitals": "^3.0.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build_tailwind": "npx tailwindcss-cli -i ./src/index.css -o ./public/output.css --watch --minify"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "css-select": "^5.1.0",
+    "loader-utils": "^3.2.1",
+    "nth-check": "*",
+    "react-scripts": "*",
+    "tailwindcss": "^3.2.2"
+  },
+  "overrides": {
+    "css-select": {
+      "nth-check": "*"
+    },
+    "react-scripts": {
+      "css-select": "*"
+    },
+    "@svgr/webpack": {
+      "css-select": "*"
+    }
+  }
+}

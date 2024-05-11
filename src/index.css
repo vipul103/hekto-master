@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .FPCard-hover-text {
+    @apply group-hover:text-white duration-300;
+  }
+  .FPCard-hover-image {
+    @apply bg-[#F6F7FB] group-hover:bg-[#F7F7F7] ease-in-out duration-300 overflow-hidden;
+  }
+  .FPCard-hover-body {
+    @apply relative before:bg-blue-cc before:absolute before:w-full before:h-full before:left-0 before:top-full before:duration-300 group-hover:before:top-0 before:-z-10 before:opacity-0 group-hover:before:opacity-100 ease-in-out z-10 overflow-hidden h-full;
+  }
+  .FPCard-hover-icons {
+    @apply absolute flex top-3 -left-10 group-hover:left-3 duration-300 opacity-0 group-hover:opacity-100;
+  }
+  .FPCard-hover-icon {
+    @apply mr-1 text-[#1aa8ee] text-[17px] p-2 box-content duration-300  flex items-center justify-center rounded-full hover:bg-[#eeeffba7] font-bold hover:text-[#2f1ac4];
+  }
+  .FPCard-hover-button {
+    @apply absolute -bottom-9 left-1/2 -translate-x-1/2 font-JosefinSans text-xs text-white bg-[#08D15F] px-3 py-2 rounded-sm group-hover:bottom-2 duration-300;
+  }
+  .LPCard-hover-image {
+    @apply group-hover:bg-[#fff] duration-300 bg-[#F7F7F7] relative overflow-hidden;
+  }
+  .LPCard-hover-icons {
+    @apply absolute flex flex-col bottom-0 left-2 group-hover:bottom-3 duration-300 opacity-0 group-hover:opacity-100;
+  }
+  .LPCard-hover-icon {
+    @apply mr-1 text-[#1aa8ee] text-[17px] p-2 box-content duration-300  flex items-center justify-center rounded-full hover:bg-[#eeeffba7] font-bold hover:text-[#2f1ac4];
+  }
+  .UF-list-marker {
+    @apply before:w-2 before:h-2 before:rounded-full  before:-left-6 before:top-[.42rem] before:absolute relative ml-6 mb-3 marker:text-3xl font-Lato text-sm text-[#ACABC3];
+  }
+  .TP-banner-h5 {
+    @apply font-JosefinSans text-navy-blue font-semibold text-[26px];
+  }
+  .TP-banner-p {
+    @apply font-Lato text-pink-cc font-semibold text-base relative inline-block after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-pink-cc;
+  }
+  .TP-banner-img {
+    @apply absolute right-0 bottom-0;
+  }
+  .DI-selected {
+    @apply !text-pink-cc relative inline-block border-b-[1px] border-pink-cc;
+  }
+  .footer-li {
+    @apply text-[#8A8FB9] text-base font-Lato mb-3;
+  }
+  .form-input {
+    @apply focus-within:outline-none w-full mb-5 border-[#C2C5E1] border-[1px] px-4 py-3;
+  }
+  .contact-in-touch {
+    @apply focus-within:outline-none border-[1px] border-[#A4B6C8] py-2 px-3;
+  }
+  .selected-main-image {
+    @apply !opacity-100;
+  }
+  .wishlist-product-th {
+    @apply py-3 px-6 font-JosefinSans text-base text-[#999999] font-medium;
+  }
+  .cart-product-th {
+    @apply py-3 px-6 font-JosefinSans text-xl text-navy-blue font-bold whitespace-pre;
+  }
+  .active-nav-link {
+    @apply text-pink-cc duration-150;
+  }
+  .nav-link {
+    @apply hover:text-pink-cc duration-150 text-[#0D0E43];
+  }
+}
